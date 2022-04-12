@@ -3,7 +3,7 @@
 /**
  * print_sign - prints the sign of a number.
  * @n: the number of which the sign will be printed.
- *
+ *Description: print_sign
  * return: 1 if number is greater than zero,
  * 0 if number is zero,
  * -1 if number is less than zero
