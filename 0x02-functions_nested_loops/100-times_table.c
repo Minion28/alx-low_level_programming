@@ -4,7 +4,7 @@
  * print_times_table - prints times table of input
  * @n: value of the times table to be printed
  */
-int print_times_table(int n)
+void print_times_table(int n)
 {
 int num, mult, prod;
 
