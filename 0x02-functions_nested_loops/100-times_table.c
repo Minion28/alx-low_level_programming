@@ -8,7 +8,7 @@ int print_times_table(int n)
 {
 int num, mult, prod;
 
-if (nu >= 0 && num <= 15)
+if (num >= 0 && num <= 15)
 {
 for (num = 0; num <= n; num++)
 {
