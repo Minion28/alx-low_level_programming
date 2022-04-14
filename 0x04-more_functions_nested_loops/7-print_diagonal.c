@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_diagonal - print digonal
@@ -10,23 +10,23 @@
 
 void print_diagonal(int n)
 {
-	int count = 0, size;
+int x, y;
 
-	if (n > 0)
-	{
-		while (count < n)
-		{
-			for (size = 0; size < count; size++)
-			{
-				_putchar(' ');
-			}
-			_putchar('\\');
-			_putchar('\n');
-			count++;
-		}
-	}
-	else
-	{
-		_putchar('\n');
-	}
+if (n > 0)
+{
+for (x = 0; i < n; i++)
+{
+for (y = 0; y < x; y++)
+{
+_putchar(' ');
+}
+_putchar('\\');
+_putchar('\n');
+
+}
+}
+else
+{
+_putchar('\n');
+}
 }
