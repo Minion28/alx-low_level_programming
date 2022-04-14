@@ -13,11 +13,11 @@ int n, i, a;
 
 for (a = 0; a < 10; a++)
 {
-for (i = 0; i <= 1; i++)
+for (n = 0; n <= 1; n++)
 {
-for (n = 0; n <= 9; n++)
+for (i = 0; i <= 9; i++)
 {
-if (!(i == 1 && j >= 5))
+if (!(n == 1 && i >= 5))
 {
 if (i)
 _putchar(i + '0');
