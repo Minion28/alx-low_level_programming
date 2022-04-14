@@ -8,7 +8,7 @@
 
 int main(void)
 {
-insigned long n, i, max;
+unsigned long n, i, max;
 
 n = 612852475143;
 max = 1;
