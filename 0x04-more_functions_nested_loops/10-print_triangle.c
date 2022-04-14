@@ -4,7 +4,7 @@
  * print_triangle - prints triangle
  * @size: limit
  *
- * Return: (void)
+ * Return: void
  */
 
 void print_triangle(int size)
