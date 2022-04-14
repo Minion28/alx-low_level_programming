@@ -9,19 +9,21 @@
 
 void more_numbers(void)
 {
-int n, i;
+int n, i, a;
 
-for (n = 0; n <= 10; n++)
+for (a = 0; a < 10; a++)
 {
-for (i = 0; i <= 14; i++)
+for (i = 0; i <= 1; i++)
 {
-if (i >= 10)
+for (n = 0; n <= 9; n++)
 {
-_putchar(i / 10 + '0');
+if (!(i == 1 && j >= 5))
+{
+if (i)
+_putchar(i + '0');
+_putchar(n + '0');
 }
-else
-{
-_putchar(i % 10 + '0');			}
+}
 }
 _putchar('\n');
 }
