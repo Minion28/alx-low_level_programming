@@ -14,7 +14,7 @@ int x, y;
 
 if (n > 0)
 {
-for (x = 0; i < n; i++)
+for (x = 0; x < n; x++)
 {
 for (y = 0; y < x; y++)
 {
@@ -22,7 +22,6 @@ _putchar(' ');
 }
 _putchar('\\');
 _putchar('\n');
-
 }
 }
 else
