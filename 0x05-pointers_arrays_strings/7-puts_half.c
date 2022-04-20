@@ -17,7 +17,7 @@ while (str[i] != '\0')
 i++;
 }
 diff = (i + 1) / 2;
-for (i = diff ; srt[i]; i++)
+for (i = diff ; str[i]; i++)
 {
 _putchar (str[i]);
 }
