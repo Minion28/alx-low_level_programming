@@ -33,8 +33,8 @@ break;
 }
 else if (s[i] == '-')
 {
-sign+= -1;
+sign *= -1;
 }
 }
-return (number *sign);
+return (number * sign);
 }
