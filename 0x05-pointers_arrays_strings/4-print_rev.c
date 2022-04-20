@@ -20,5 +20,5 @@ for (; len >= left; len--)
 {
 _putchar(s[len]);
 }
-_putchar('\n')
+_putchar('\n');
 }
