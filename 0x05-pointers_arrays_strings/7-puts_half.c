@@ -19,7 +19,7 @@ i++;
 diff = (i + 1) / 2;
 for (i = diff ; srt[i]; i++)
 {
-_putchar (srt[i]);
+_putchar (str[i]);
 }
 _putchar ('\n');
 }
