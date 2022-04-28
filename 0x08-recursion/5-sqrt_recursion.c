@@ -15,7 +15,7 @@ if (c * (n / c) == n)
 else
 	return (-1);
 }
-return (0 + poer_operation(n, c + 1));
+return (0 + power_operation(n, c + 1));
 }
 
 /**
