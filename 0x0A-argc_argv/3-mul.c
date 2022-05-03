@@ -5,7 +5,7 @@
  * main - multiplies two arguments and prints a result
  * @argc: argument count
  * @argv: argument vector
- * Return: 0 if no errors
+* Return: 0 if no errors
  */
 
 int main(int argc, char *argv[])
@@ -21,7 +21,7 @@ for (i = 0; i < argc; i++)
 first_num = atoi(argv[1]);
 sec_num = atoi(argv[2]);
 }
-product = first_num * sec_num;
+product = first_num *sec_num;
 printf("%d\n", product);
 return (0);
 }
