@@ -21,7 +21,7 @@ return (NULL);
 }
 for (i = 0; i < size; i++)
 {
-arr[i] = c;
+ar[i] = c;
 }
 return (ar);
 }
