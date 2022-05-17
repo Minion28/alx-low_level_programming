@@ -19,6 +19,6 @@ typedef struct print
 {
 char *p;
 void (prints)(va_list arg);
-} print_t
+} print_t;
 
 #endif
