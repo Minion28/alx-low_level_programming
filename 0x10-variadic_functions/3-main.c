@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    print_all("i miss", 'B', 3, "you acquiline");
+    print_all("miss", 'B', 3, "you_acquiline");
     return (0);
 }
