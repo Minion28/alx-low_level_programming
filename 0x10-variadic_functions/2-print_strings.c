@@ -10,7 +10,7 @@
  * Return: nothing when separator is NULL
  */
 
-void print_strings(const char *separator, const unsigned int n, ...);
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list s;
 char *str;
@@ -20,12 +20,12 @@ for (x = 0; x < n; x++)
 {
 str = va_arg(s, char *);
 if (str == NULL)
-	_putchar("Nil")
+printf("Nil");
 else
-	_putchar("%s", str);
+printf("%s", str);
 if (x != (n - 1) && separator != NULL)
-	_putchar("/s", separator);
+printf("%s", separator);
 }
-_putchar("\n");
+printf("\n");
 va_end(s);
 }

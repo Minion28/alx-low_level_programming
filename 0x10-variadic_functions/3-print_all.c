@@ -16,7 +16,7 @@ void print_char(va_list arg)
 {
 char c;
 c = va_arg(arg, int);
-_putchar("%c", c);
+printf("%c", c);
 }
 
 /**
@@ -27,7 +27,7 @@ void print_int(va_list arg)
 {
 int b;
 b = va_arg(arg, int);
-_putchar("%d", b);
+printf("%d", b);
 }
 
 /**
@@ -38,7 +38,7 @@ void print_float(va_list arg)
 {
 float b;
 b = va_arg(arg, double);
-_putchar("%f", b);
+printf("%f", b);
 }
 
 /**
@@ -51,10 +51,10 @@ char *a;
 a = va_arg(arg, char *);
 if (a == NULL)
 {
-_putchar("(Nil)");
+printf("(Nil)");
 return;
 }
-_putchar("%s", a);
+printf("%s", a);
 }
 
 /**
@@ -71,7 +71,7 @@ void print_all(const char * const format, ...)
 va_list x;
 int z = 0, y = 0;
 char *separator = "";
-printer_t funcs[] = {
+print_t funcs[] = {
 {"c", print_char},
 {"i", print_int},
 {"f", print_float},
@@ -81,15 +81,15 @@ va_start(x, format);
 while (format && (*(format + z)))
 {
 y = 0;
-while (y < 4 && (*(format + z) != *(funcs[y].symbol)))
+while (y < 4 && (*(format + z) != *(funcs[y].p)))
 y++;
 if (y < 4)
 {
 printf("%s", separator);
-funcs[y].print(x);
+funcs[y].prints(x);
 separator = ", ";
 }
-a++;
+z++;
 }
 printf("\n");
 va_end(x);
