@@ -9,19 +9,19 @@
  * @...: variable no. of printed no.s
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list x;
 unsigned int a;
 va_start(x, n);
 for (a = 0; a < n; a++)
 {
-_putchar("%d", va_arg(x, int));
+printf("%d", va_arg(x, int));
 if (a != (n - 1) && separator != NULL)
 {
-_putchar("%s", separator);
+printf("%s", separator);
 }
 }
-_putchar("\n");
+printf("\n");
 va_end(nums);
 }
