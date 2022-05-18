@@ -6,6 +6,7 @@
 /**
  * sum_them_all - addition
  * @x: input
+ * @n: no. of parameters to be added together
  * @...: variable no. of parameters to calculate sum
  * Return: sum
  */
