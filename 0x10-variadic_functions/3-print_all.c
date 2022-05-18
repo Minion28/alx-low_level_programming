@@ -51,7 +51,7 @@ char *a;
 a = va_arg(arg, char *);
 if (a == NULL)
 {
-printf("(Nil)");
+printf("(nil)");
 return;
 }
 printf("%s", a);
