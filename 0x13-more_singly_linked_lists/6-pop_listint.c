@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * po_listint - deletes head node of lisint_t list
+ * pop_listint - deletes head node of lisint_t list
  * @head: head node
  * Return: head node and 0 when linked list is empty
  */
