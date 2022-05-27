@@ -15,7 +15,7 @@ return;
 }
 for (; *head != NULL;)
 {
-a =(*head)->next;
+a = (*head)->next;
 free(*head);
 *head = a;
 }
