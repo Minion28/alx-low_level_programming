@@ -8,7 +8,7 @@
 
 size_t listint_len(const listint_t *h)
 {
-long unsigned int e = 0;
+unsigned long int e = 0;
 while (h)
 {
 e++;
