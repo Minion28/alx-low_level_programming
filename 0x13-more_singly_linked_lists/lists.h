@@ -35,28 +35,48 @@ size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
 
+size_t num(const listint_t *head);
+size_t print_listint_safe(const listint_t *head);
+
 /**
- * _e - reallocate memory
- * @list: change old list
- * @size: new list size
- * @new: new node
- * Return: pointer to list
+ * num - Counts the no. of nodes
+ * @head: A pointer to the head of the listint_t to check.
+ * Return: If the list is not looped - 0.
+ *         Otherwise - the number of unique nodes in the list.
  */
-const listint_t **_e(const listint_t **x, size_t size, const listint_t *new)
+size_t num(const listint_t *head)
 {
-const listint_t **newer;
-size_t a;
-newer = malloc(size * sizeof(listint_t *));
-if (newer == NULL)
+const listint_t *u, *m;
+size_t x = 1;
+
+if (head == NULL || head->next == NULL)
+return (0);
+u = head->next;
+m = (head->next)->next;
+while (m)
 {
-free(x);
-exit(98);
+if (u == m)
+{
+u = head;
+while (u != m)
+{
+x++;
+u = u->next;
+m = m->next;
 }
-for (a = 0; a < size - 1; a++)
-newer[a] = x[a];
-newer[a] = new;
-free(x);
-return (newer);
+u = u->next;
+while (u != m)
+{
+x++;
+u = u->next;
+}
+return (x);
+}
+u = u->next;
+m= (m->next)->next;
+}
+
+return (0);
 }
 
 #endif
