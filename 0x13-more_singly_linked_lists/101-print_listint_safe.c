@@ -1,14 +1,12 @@
 #include "lists.h"
 
-
 size_t num(const listint_t *head);
 size_t print_listint_safe(const listint_t *head);
 
 /**
  * num - Counts the no. of nodes
- * @head: A pointer to the head of the listint_t to check.
- * Return: If the list is not looped - 0.
- *         Otherwise - the number of unique nodes in the list.
+ * @head: head node
+ * Return: 0 when not looped
  */
 size_t num(const listint_t *head)
 {
