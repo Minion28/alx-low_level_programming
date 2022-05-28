@@ -8,21 +8,21 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-const listint_t **x = NULL;
-size_t a;
-size_t z = 0;
-while (head != NULL)
-for (a = 0; a < z; a++)
-if (head == x[a])
+size_t x;
+long unsigned int a = 0;
+x = num(head);
+if (x == 0)
 {
-printf("->[%p] %d\n", (void *)head, head->n);
-free(x);
-return (z);
-}
-z++;
-x = _e(x, z, head);
-printf("->[%p] %d\n", (void *)head, head->n);
+for (; head != NULL; x++)
+printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
-free(x);
-return (z);
+}
+else
+{
+for (a = 0; a < x; a++)
+printf("[%p] %d\n", (void *)head, head->n);
+head = head->next;
+}
+printf("-> [%p] %d\n", (void *)head, head->n);
+return (x);
 }
