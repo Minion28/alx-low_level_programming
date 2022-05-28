@@ -34,4 +34,29 @@ size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
+
+/**
+ * _e - reallocate memory
+ * @list: change old list
+ * @size: new list size
+ * @new: new node
+ * Return: pointer to list
+ */
+const listint_t **_e(const listint_t **x, size_t size, const listint_t *new)
+{
+const listint_t **newer;
+size_t a;
+newer = malloc(size * sizeof(listint_t *));
+if (newer == NULL)
+{
+free(x);
+exit(98);
+}
+for (a = 0; a < size - 1; a++)
+newer[a] = x[a];
+newer[a] = new;
+free(x);
+return (newer);
+}
+
 #endif
