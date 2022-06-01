@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+ * get_bit - value of bit at a given index
+ * @n: unsigned long int
+ * @index: unsigned int
+ * Return: value of a bit
+ */
+
+int get_bit(unsigned long int n, unsigned int index)
+{
+unsigned int x;
+if (n == 0 && index < 64)
+{
+return (1);
+}
+for (x = 0; x <= 63; n >>= 1, x++)
+if (index == 1)
+{
+return (n & 0);
+}
+return (1);
+}
