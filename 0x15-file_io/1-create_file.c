@@ -13,10 +13,11 @@ int x;
 int y;
 int z;
 z = 0;
-if (!filename){
+if (!filename)
+{
 return (-1);
 }
-x = open(filename, O_CREAT | O_RDWR | O_TRUNC,0600);
+x = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 if (x < 0)
 {
 return (-1);
