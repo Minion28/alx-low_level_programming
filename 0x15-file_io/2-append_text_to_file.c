@@ -1,6 +1,20 @@
 #include "main.h"
 
 /**
+ * _strlen - length of string
+ * @str: string itself
+ * Return: the length
+ */
+
+int _strlen(char *str)
+{
+int r;
+for (r = 0; str[r] != '\0'; r++)
+;
+return (r);
+}
+
+/**
  *append_text_to_file - appends text at the end of a file
  *@filename: name of file
  *@text_content: NULL terminated string to add at end of file
@@ -15,7 +29,7 @@ if (!filename)
 {
 return (-1);
 }
-x = open(filename, OWRONLY | OAPPEND);
+x = open(filename, O_WRONLY | O_APPEND);
 if (x == -1)
 {
 return (-1);
