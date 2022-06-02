@@ -1,19 +1,13 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
  * main - copy content of one file to another
  * @argc: argument count
  * @argv: argument vector
  * Return: 0 if success
  */
-
 int main(int argc, char *argv[])
 {
-int x;
-int y;
-int z;
-int a;
-int b;
+int x, y, z, a, b;
 char c[1024];
 
 if (argc != 3)
