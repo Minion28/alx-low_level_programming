@@ -50,7 +50,6 @@ int binary_search(int *array, size_t size, int value)
 void print_array(int *array, size_t y, size_t z)
 {
 	unsigned int a;
-
 	printf("Searching in array: ");
 	for (a = y; a < z; a++)
 	{
